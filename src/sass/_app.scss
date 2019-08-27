@@ -1,0 +1,115 @@
+body {
+  width: 100%;
+  min-height: 100vh;
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../img/weather-large.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.app {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  .header {
+    &__title {
+      color: $font-white;
+      font-weight: 100;
+      text-transform: uppercase;
+      min-height: 75px;
+      background-color: $background-black;
+      font-size: $font-header-small;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .main {
+    flex-grow: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+
+    &__wrapper {
+      flex-basis: 248px;
+      // background-color: green;
+
+      .form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 47px;
+
+        &__input {
+          flex-basis: 100%;
+          height: 20px;
+          border: 1px solid black;
+          border-radius: 4px;
+          color: $font-gray;
+          padding: 3px 0 3px 6px;
+        }
+
+        &__btn {
+          flex-basis: 76px;
+          height: 20px;
+          margin-top: 8px;
+          border: 1px solid black;
+          background-color: $background-white;
+        }
+      }
+
+      .display {
+        color: $font-white;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        &__temperature {
+          font-size: $font-temperature-small;
+          flex-basis: 100%;
+          text-align: center;
+          margin-top: 20px;
+        }
+
+        &__city {
+          font-size: $font-city-small;
+          flex-basis: 100%;
+          text-align: center;
+          margin-top: 15px;
+        }
+
+        &__description {
+          font-size: $font-description-small;
+          flex-basis: 100%;
+          text-align: center;
+          margin-top: 15px;
+        }
+
+        &__data {
+          font-size: $font-data-small;
+          flex-basis: 45%;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+
+  .footer {
+    &__paragraph {
+      color: $font-white;
+      background-color: $background-black;
+      min-height: 50px;
+      font-size: $font-footer-small;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

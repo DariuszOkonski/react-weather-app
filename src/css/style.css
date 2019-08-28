@@ -94,26 +94,27 @@ body {
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin-top: 47px;
+  margin-top: 40px;
 }
 
 .app .main__wrapper .form__input {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
-  height: 20px;
+  height: 24px;
   border: 1px solid black;
   border-radius: 4px;
-  color: #aaa;
   padding: 3px 0 3px 6px;
+  font-size: 1.2rem;
 }
 
 .app .main__wrapper .form__btn {
   -ms-flex-preferred-size: 76px;
       flex-basis: 76px;
-  height: 20px;
+  height: 24px;
   margin-top: 8px;
   border: 1px solid black;
   background-color: #fff;
+  font-size: 1.2rem;
 }
 
 .app .main__wrapper .display {
@@ -133,7 +134,7 @@ body {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 25px;
 }
 
 .app .main__wrapper .display__city {
@@ -156,7 +157,7 @@ body {
   font-size: 1.4rem;
   -ms-flex-preferred-size: 45%;
       flex-basis: 45%;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 .app .footer__paragraph {

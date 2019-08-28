@@ -77,11 +77,16 @@ body {
           margin-top: 25px;
         }
 
-        &__city {
+        &__city,
+        &__error {
           font-size: $font-city-small;
           flex-basis: 100%;
           text-align: center;
           margin-top: 15px;
+        }
+
+        &__error {
+          margin-top: 90px;
         }
 
         &__description {

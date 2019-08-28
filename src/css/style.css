@@ -137,12 +137,16 @@ body {
   margin-top: 25px;
 }
 
-.app .main__wrapper .display__city {
+.app .main__wrapper .display__city, .app .main__wrapper .display__error {
   font-size: 3rem;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   text-align: center;
   margin-top: 15px;
+}
+
+.app .main__wrapper .display__error {
+  margin-top: 90px;
 }
 
 .app .main__wrapper .display__description {

@@ -34,6 +34,12 @@ class App extends Component {
               <p className="display__data">Wind: 1m/s</p>
             </div>
 
+            {/* <div className="display">
+              <p className="display__error">
+                No Data Found
+              </p>
+            </div> */}
+
           </section>
         </main>
 

@@ -66,6 +66,12 @@ body {
           align-items: center;
 }
 
+@media (orientation: landscape) {
+  .app .header__title {
+    min-height: 50px;
+  }
+}
+
 .app .main {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -86,6 +92,13 @@ body {
       flex-basis: 248px;
 }
 
+@media (orientation: landscape) {
+  .app .main__wrapper {
+    -ms-flex-preferred-size: 376px;
+        flex-basis: 376px;
+  }
+}
+
 .app .main__wrapper .form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -95,6 +108,14 @@ body {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   margin-top: 40px;
+}
+
+@media (orientation: landscape) {
+  .app .main__wrapper .form {
+    margin-top: 5px;
+    margin-left: 64px;
+    margin-right: 64px;
+  }
 }
 
 .app .main__wrapper .form__input {
@@ -164,6 +185,21 @@ body {
   margin-top: 15px;
 }
 
+@media (orientation: landscape) {
+  .app .main__wrapper .display__temperature, .app .main__wrapper .display__city, .app .main__wrapper .display__description, .app .main__wrapper .display__data {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+  }
+  .app .main__wrapper .display__temperature, .app .main__wrapper .display__city, .app .main__wrapper .display__description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+}
+
 .app .footer__paragraph {
   color: #fff;
   background-color: #000;
@@ -178,5 +214,11 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (orientation: landscape) {
+  .app .footer__paragraph {
+    min-height: 30px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

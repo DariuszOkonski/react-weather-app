@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Form from './Form';
 
 class MainComp extends Component {
   state = {}
@@ -8,11 +9,7 @@ class MainComp extends Component {
       <main className="main">
         <section className="main__wrapper">
 
-          <form className="form">
-            <input type="text" className="form__input" placeholder="Type city name..." />
-            <button className="form__btn">Find city</button>
-            <button className="form__btn">Clear</button>
-          </form>
+          <Form />
 
           <div className="display">
             <p className="display__temperature">27&#176;C</p>

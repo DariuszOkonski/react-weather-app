@@ -28,16 +28,22 @@ body {
 
       @media(orientation: landscape) {
         min-height: 50px;
+        letter-spacing: 1px;
       }
 
       @media(min-width: 768px) {
         min-height: 100px;
         font-size: $font-header-medium;
       }
+
+      @media(min-width: 1025px) {
+        min-height: 120px;
+        font-size: $font-header-large;
+        letter-spacing: 2px;
+      }
+
     }
   }
-
-
 
   .main {
     flex-grow: 1;
@@ -59,6 +65,10 @@ body {
 
       @media(min-width: 768px) and (orientation: landscape) {
         flex-basis: 640px;
+      }
+
+      @media(min-width: 1025px) {
+        flex-basis: 856px;
       }
 
       .form {
@@ -84,6 +94,12 @@ body {
           margin-right: 94px;
         }
 
+        @media(min-width: 1025px) {
+          margin-top: 86px;
+          margin-left: 0px;
+          margin-right: 0px;
+        }
+
         &__input {
           flex-basis: 100%;
           height: 24px;
@@ -95,6 +111,11 @@ body {
           @media(min-width: 768px) {
             height: 34px;
             font-size: $font-size-medium;
+          }
+
+          @media(min-width: 1025px) {
+            height: 40px;
+            font-size: $font-size-large;
           }
         }
 
@@ -111,6 +132,13 @@ body {
             height: 34px;
             margin-top: 38px;
             font-size: $font-size-medium;
+          }
+
+          @media(min-width: 1025px) {
+            flex-basis: 272px;
+            height: 40px;
+            margin-top: 77px;
+            font-size: $font-size-large;
           }
         }
       }
@@ -136,6 +164,11 @@ body {
           @media(min-width: 768px) and (orientation: landscape) {
             margin-top: 113px;
           }
+
+          @media(min-width: 1025px) {
+            margin-top: 124px;
+            font-size: $font-temperature-large;
+          }
         }
 
         &__city,
@@ -154,6 +187,10 @@ body {
             margin-top: 113px;
           }
 
+          @media(min-width: 1025px) {
+            margin-top: 124px;
+            font-size: $font-city-large;
+          }
         }
 
         &__error {
@@ -161,6 +198,10 @@ body {
 
           @media(min-width: 768px) {
             margin-top: 328px;
+          }
+
+          @media(min-width: 768px) and (orientation: landscape) {
+            margin-top: 160px;
           }
         }
 
@@ -178,6 +219,11 @@ body {
           @media(min-width: 768px) and (orientation: landscape) {
             margin-top: 113px;
           }
+
+          @media(min-width: 1025px) {
+            margin-top: 124px;
+            font-size: $font-description-large;
+          }
         }
 
         &__data {
@@ -192,6 +238,10 @@ body {
 
           @media(min-width: 768px) and (orientation: landscape) {
             font-size: $font-data-medium-small;
+          }
+
+          @media(min-width: 1025px) {
+            font-size: $font-data-large;
           }
         }
 

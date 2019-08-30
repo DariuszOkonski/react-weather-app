@@ -72,6 +72,13 @@ body {
   }
 }
 
+@media (min-width: 768px) {
+  .app .header__title {
+    min-height: 100px;
+    font-size: 3rem;
+  }
+}
+
 .app .main {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -99,6 +106,13 @@ body {
   }
 }
 
+@media (min-width: 768px) {
+  .app .main__wrapper {
+    -ms-flex-preferred-size: 452px;
+        flex-basis: 452px;
+  }
+}
+
 .app .main__wrapper .form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -118,6 +132,15 @@ body {
   }
 }
 
+@media (min-width: 768px) {
+  .app .main__wrapper .form {
+    margin-top: 80px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 .app .main__wrapper .form__input {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
@@ -128,6 +151,13 @@ body {
   font-size: 1.2rem;
 }
 
+@media (min-width: 768px) {
+  .app .main__wrapper .form__input {
+    height: 34px;
+    font-size: 1.4rem;
+  }
+}
+
 .app .main__wrapper .form__btn {
   -ms-flex-preferred-size: 76px;
       flex-basis: 76px;
@@ -136,6 +166,16 @@ body {
   border: 1px solid black;
   background-color: #fff;
   font-size: 1.2rem;
+}
+
+@media (min-width: 768px) {
+  .app .main__wrapper .form__btn {
+    -ms-flex-preferred-size: 136px;
+        flex-basis: 136px;
+    height: 34px;
+    margin-top: 38px;
+    font-size: 1.4rem;
+  }
 }
 
 .app .main__wrapper .display {
@@ -158,6 +198,13 @@ body {
   margin-top: 25px;
 }
 
+@media (min-width: 768px) {
+  .app .main__wrapper .display__temperature {
+    margin-top: 56px;
+    font-size: 8rem;
+  }
+}
+
 .app .main__wrapper .display__city, .app .main__wrapper .display__error {
   font-size: 3rem;
   -ms-flex-preferred-size: 100%;
@@ -166,8 +213,21 @@ body {
   margin-top: 15px;
 }
 
+@media (min-width: 768px) {
+  .app .main__wrapper .display__city, .app .main__wrapper .display__error {
+    font-size: 5rem;
+    margin-top: 20px;
+  }
+}
+
 .app .main__wrapper .display__error {
   margin-top: 90px;
+}
+
+@media (min-width: 768px) {
+  .app .main__wrapper .display__error {
+    margin-top: 328px;
+  }
 }
 
 .app .main__wrapper .display__description {
@@ -178,11 +238,25 @@ body {
   margin-top: 15px;
 }
 
+@media (min-width: 768px) {
+  .app .main__wrapper .display__description {
+    margin-top: 30px;
+    font-size: 3.2rem;
+  }
+}
+
 .app .main__wrapper .display__data {
   font-size: 1.4rem;
   -ms-flex-preferred-size: 45%;
       flex-basis: 45%;
   margin-top: 15px;
+}
+
+@media (min-width: 768px) {
+  .app .main__wrapper .display__data {
+    margin-top: 30px;
+    font-size: 2.6rem;
+  }
 }
 
 @media (orientation: landscape) {
@@ -219,6 +293,13 @@ body {
 @media (orientation: landscape) {
   .app .footer__paragraph {
     min-height: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .app .footer__paragraph {
+    min-height: 60px;
+    font-size: 1.4rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

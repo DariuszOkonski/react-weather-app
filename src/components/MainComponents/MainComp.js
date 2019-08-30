@@ -7,7 +7,7 @@ class MainComp extends Component {
   state = {
     isLoaded: false,
     error: false,
-    city: 'sdfsd',
+    city: '',
     temperature: '',
     description: '',
     sunrise: '',

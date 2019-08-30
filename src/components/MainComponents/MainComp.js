@@ -48,7 +48,7 @@ class MainComp extends Component {
     }
 
     console.log(this.state.city)
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${this.state.city}&APPID=a9302906cfdb7f28449954dd9590d745&units=metric`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${this.state.city}&APPID=a9302906cfdb7f28449954dd9590d745&units=metric`)
       .then(res => {
         if (res.status === 200) {
           return res.json();

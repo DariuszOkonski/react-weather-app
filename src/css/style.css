@@ -113,6 +113,13 @@ body {
   }
 }
 
+@media (min-width: 768px) and (orientation: landscape) {
+  .app .main__wrapper {
+    -ms-flex-preferred-size: 640px;
+        flex-basis: 640px;
+  }
+}
+
 .app .main__wrapper .form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -138,6 +145,14 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+}
+
+@media (min-width: 768px) and (orientation: landscape) {
+  .app .main__wrapper .form {
+    margin-top: 49px;
+    margin-left: 94px;
+    margin-right: 94px;
   }
 }
 
@@ -205,6 +220,12 @@ body {
   }
 }
 
+@media (min-width: 768px) and (orientation: landscape) {
+  .app .main__wrapper .display__temperature {
+    margin-top: 113px;
+  }
+}
+
 .app .main__wrapper .display__city, .app .main__wrapper .display__error {
   font-size: 3rem;
   -ms-flex-preferred-size: 100%;
@@ -217,6 +238,12 @@ body {
   .app .main__wrapper .display__city, .app .main__wrapper .display__error {
     font-size: 5rem;
     margin-top: 20px;
+  }
+}
+
+@media (min-width: 768px) and (orientation: landscape) {
+  .app .main__wrapper .display__city, .app .main__wrapper .display__error {
+    margin-top: 113px;
   }
 }
 
@@ -245,6 +272,12 @@ body {
   }
 }
 
+@media (min-width: 768px) and (orientation: landscape) {
+  .app .main__wrapper .display__description {
+    margin-top: 113px;
+  }
+}
+
 .app .main__wrapper .display__data {
   font-size: 1.4rem;
   -ms-flex-preferred-size: 45%;
@@ -256,6 +289,12 @@ body {
   .app .main__wrapper .display__data {
     margin-top: 30px;
     font-size: 2.6rem;
+  }
+}
+
+@media (min-width: 768px) and (orientation: landscape) {
+  .app .main__wrapper .display__data {
+    font-size: 2rem;
   }
 }
 
